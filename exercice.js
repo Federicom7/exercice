@@ -26,7 +26,7 @@ const categories = [
 // TO-DO: Implement this function
 const getCategoryPath = (categories, categoryName) => {
   let path = ''
-   for (element of categories) {
+   for (const element of categories) {
      if (!path.includes(categoryName)) {
        path = `${path}/${element.name}`
        path = path+getCategoryPath(element.subcategories, categoryName)
